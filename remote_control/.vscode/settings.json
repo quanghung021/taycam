@@ -1,0 +1,33 @@
+{
+  "C_Cpp.errorSquiggles": "disabled",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+  "idf.espIdfPath": "${env:IDF_PATH}",
+  "idf.customExtraPaths": "${env:PATH}",
+  "idf.toolsPath": "${env:IDF_TOOLS_PATH}",
+  "idf.port": "/dev/ttyUSB0",
+  "idf.flashBaudRate": "921600",
+  "files.associations": {
+    "*.h": "c",
+    "*.c": "c",
+    "sdkconfig": "properties",
+    "sdkconfig.defaults": "properties"
+  },
+  "files.exclude": {
+    "**/build": true,
+    "**/.git": true
+  },
+  "idf.currentSetup": "C:\\esp\\v6.0.2\\esp-idf",
+  "idf.openOcdConfigs": [
+    "interface/ftdi/esp32_devkitj_v1.cfg",
+    "target/esp32.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32"
+  },
+  "clangd.path": "C:\\Espressif\\tools\\esp-clang\\esp-20.1.1_20250829\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=e:\\taycam\\testcode\\remote_control\\build"
+  ]
+}

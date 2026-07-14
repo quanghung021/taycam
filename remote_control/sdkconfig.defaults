@@ -1,0 +1,13 @@
+# Tắt WiFi và Bluetooth – không cần cho project này
+CONFIG_ESP32_WIFI_ENABLED=n
+CONFIG_BT_ENABLED=n
+
+# Tăng tốc độ FreeRTOS tick lên 1000 Hz (hỗ trợ delay 1 ms chính xác)
+CONFIG_FREERTOS_HZ=1000
+
+# Log level mặc định INFO (đổi thành WARN khi production)
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+
+# Stack size monitor (hữu ích khi debug)
+CONFIG_FREERTOS_USE_TRACE_FACILITY=y
+CONFIG_FREERTOS_GENERATE_RUN_TIME_STATS=n
